@@ -1,0 +1,192 @@
+/* INFORMAÇÕES GERAIS QUE VALEM PARA TODO O SITE */
+/* o asterisco abaixo transforma o documento inteiro, assim como o body*/
+/* as classes transformam partes especificadas no html*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: linear-gradient(rgb(201, 229, 242), rgb(234, 201, 242), rgb(242, 201, 213));
+}
+
+
+h1 {
+    font-size: 40px;
+
+}
+
+p {
+    font-size: 18px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*HEADER/BANNER*/
+
+.banner {
+    background: url(../img/banner-bg1.jpg) center no-repeat;
+    background-size: cover;
+    height: 560px;
+}
+
+.banner__conteudo {
+    padding: 180px;
+    color: black;
+    text-align: center;
+}
+
+.banner__titulo {
+    font-size: 44px;
+    margin-bottom: 0;
+}
+
+.banner__subtitulo {
+    font-size: 24px;
+}
+
+/* BOTÃO */
+
+.botao {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* SEÇÃO - SOBRE MIM */
+
+.container{
+    margin: 0 auto; /* auto = lateral automatica, mesmo valor para esquerda e direita*/
+    width: 100%; /*container vai ocupar 100% do espaço disponível*/
+    max-width: 1080px;
+    margin-top: 90px;
+}
+
+.sobre-titulo {
+    font-size: 34px;
+    color: grey;
+
+}
+
+.sobre {
+    display: flex; /* coloca os elementos um ao lado do outro, div mãe interfere nos "filhos" */ 
+}
+
+.sobre__descriçao, .sobre__habilidades {
+    width: 50%;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.sobre__habilidades {
+    margin-left: 90px;
+}
+
+.sobre__cv {
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.sobre__descricao {
+    text-align: justify;
+    
+}
+.sobre__descricao-principal {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.sobre__descricao-secundaria {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+/* REDES SOCIAIS */
+
+.redes-sociais {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+.redes-sociais__link {
+    background-color: #F8F8FF;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+
+.icones {
+    text-align: end;
+    margin-right: 50px;
+    margin-top: 20px;
+    color: black;
+    font-size: 8px;
+}
+
+
+.copyright {
+    color: black;
+    margin-top: 50px;
+    padding: 90px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        width: 480px;
+    }
+
+    .banner__conteudo {
+        padding: 100px;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre-titulo {
+        width: 100%;
+        margin-left: 60px;
+        font-size: 28px;
+    }
+
+    .sobre__descriçao {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .sobre__habilidades {
+        width: 100%;
+        margin-left: 50px;
+    }
+    
+    .sobre__habilidades-titulo {
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+
+    .redes-sociais {
+        display: grid
+
+    }
+
+    .icones {
+        margin-right: 0;
+        text-align: center;
+    }
+
